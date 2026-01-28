@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 
 
 connectDB()
-.then( () =>{
+.then( () =>{                 
   app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`)
 }) 

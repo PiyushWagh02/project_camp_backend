@@ -8,6 +8,7 @@ import {verifyJWT} from "../middlewares/auth.middleware.js"
 import {userChangeCurrentPasswordValidator, userForgotPassowordValidator, userLoginValidator, userRegisterValidator, userResetForgotPasswordValidator} from "../validators/index.js"
 const router =Router();
 
+
 //unsecured route
 router.route("/register").post(userRegisterValidator()
 ,validate,registerUser);
