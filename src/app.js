@@ -10,6 +10,8 @@ import cookieParser from 'cookie-parser'
 import healthCheckRouter from "./routes/healthcheck.routes.js"
 
 import  authRouter from "./routes/auth.routes.js"
+import  projectrouter  from "./routes/project.routes.js"
+
 
 
 
@@ -36,6 +38,8 @@ app.use(cors({
 
 app.use("/api/v1/healthcheck",healthCheckRouter);
 app.use("/api/v1/auth",authRouter);
+app.use("/api/v1/projects",projectrouter);
+
 
 app.get("/",(req,res) => {
     res.send("Welcome to basecampy")
